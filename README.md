@@ -1,14 +1,14 @@
 ﻿# ***Director Search Converter Readme***
 # Contents
-[1.0 - Overview](#overview)
+## [1.0 - Overview](#overview)
 
-[2.0 - File Selection](#file-selection)
+## [2.0 - File Selection](#file-selection)
 
-[3.0 - Options](#options)
+## [3.0 - Options](#options)
 
-[4.0 - Export](#export)
+## [4.0 - Export](#export)
 
-[5.0 - .xlsx File](#file)
+## [5.0 - .xlsx File](#file)
 
 
 
@@ -17,7 +17,7 @@ This program is designed as a tool for the automatic conversion of multiple .pdf
 
 It also allows for several filtering options to cater to the auditing work being performed and was trialled by BDO LLP for company use circa. January 2020, where this process was originally performed manually.
 
-The files found here match the template of the original .pdf extracts, but have had all references to director name, dates, companies, and reference numbers randomised.
+The files [found here](https://github.com/dwrlewis/Director-Search-Converter/tree/master/Test%20Files) match the template of the original .pdf extracts, but have had all references to director name, dates, companies, and reference numbers randomised.
 ## 1.1 - Interpreter Settings
 This program was generated in Python 3.8.0 using the Pycharm IDE with the following interpreter settings:
 
