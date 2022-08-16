@@ -41,6 +41,7 @@ This program was generated in Python 3.8.0 using the Pycharm IDE with the follow
 # <a name="file-selection"></a>2.0 - File Selection:
 Save all director reports into a folder and select its file path in the top left of the user interface. Once the file path has been selected it will automatically list the contents of the folder, flagging up any files without a .pdf extension.
 
+![alt text](https://github.com/dwrlewis/Director-Search-Converter/blob/ccb4a3d79f2bbe8a0f457cbbd1e386f6f6513f49/README%20Images/Screen%201.png)
 
 # <a name="options"></a>3.0 - Options:
 There are several options available to filter out any unnecessary data from the extracts, including:
@@ -50,18 +51,23 @@ There are several options available to filter out any unnecessary data from the 
 - Status Filter – Removes any companies not currently marked as ‘Active’, so companies that have been dissolved will be removed
 - Rename PDF – When .pdf files are initially exported from D & B, they will normally contain a random number string as its name. All files must be renamed to that of the relevant director for audit archiving purposes. Selecting this option automatically renames the file to the name of the director after data has been imported.
 
+![alt text](https://github.com/dwrlewis/Director-Search-Converter/blob/ccb4a3d79f2bbe8a0f457cbbd1e386f6f6513f49/README%20Images/Screen%202.png)
 
 # <a name="export"></a>4.0 - Export:
 When the conversion button is pressed, outputs will be printed to the list box as files are converted individually, displaying the total number of companies present in the file, as well as the number that remain after filtering has been applied. The total number of companies converted, as well as those remaining after filtering, is also displayed once all files are imported.
 
 Any .pdf files with non-standard formatting will be marked up in red, but this should only occur due to a non-director report .pdf file being present in the directory, as the .pdf formatting of the export reports is highly consistent when transforming in pdfminer3.
 
+![alt text](https://github.com/dwrlewis/Director-Search-Converter/blob/ccb4a3d79f2bbe8a0f457cbbd1e386f6f6513f49/README%20Images/Screen%203.png)
+
 
 ## 4.1 - .pdf Renaming Note:
 Note that if .pdf renaming has been selected as an option, it will disable the pdf conversion button until the import file path is reselected. This is because the import is dependent on the original filenames which will no longer be present, so the import path will need to be reselected if different filters are to be applied to the data.
 
-
+![alt text](https://github.com/dwrlewis/Director-Search-Converter/blob/ccb4a3d79f2bbe8a0f457cbbd1e386f6f6513f49/README%20Images/Screen%204.png)
 
 # <a name="file"></a>5.0 - .xlsx File
 Once the conversion has completed, the file will be saved to the same folder as the imports, named as ‘Consolidated Director Report.xlsx’. If there is a file present in this folder already it will have its contents overwritten.
+
+![alt text](https://github.com/dwrlewis/Director-Search-Converter/blob/ccb4a3d79f2bbe8a0f457cbbd1e386f6f6513f49/README%20Images/Screen%205.png)
 
