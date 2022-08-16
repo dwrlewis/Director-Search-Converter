@@ -285,7 +285,7 @@ class MasterFrame:
 
         # 17) Write to Excel Files
         with pd.ExcelWriter('Consolidated Director Report.xlsx') as writer:
-            data.to_excel(writer, sheet_name='Director Reports', index=False)
+            export_data.to_excel(writer, sheet_name='Director Reports', index=False)
 
         # 18) Update GUI with Summary of Data
         self.output_listbox.insert(tk.END, '')
@@ -299,9 +299,9 @@ class MasterFrame:
         # GUI Update on PDF Renaming
         if self.rename_button['text'] == 'Yes':
             self.output_listbox.insert(tk.END, 'PDFs have been renamed to reflect their director:')
-            self.output_listbox.insert(tk.END, 'Export disabled due to file name dependency.')
+            self.output_listbox.insert(tk.END, 'Conversion button disabled due to original file name dependency.')
             self.output_listbox.itemconfig(tk.END, fg='yellow')
-            self.output_listbox.insert(tk.END, 'Please reselect import directory to enable.')
+            self.output_listbox.insert(tk.END, 'Please reselect import directory to re-enable.')
             self.output_listbox.itemconfig(tk.END, fg='yellow')
             self.output_listbox.insert(tk.END, '')
             self.ep_convert_button.config(state='disabled')
@@ -374,9 +374,6 @@ def pdf_text(pdf):
         data = pd.DataFrame()
         director_name = pdf
         print(error)
-
-    print(pdf)
-    print(data)
 
     fp.close()
     return pdf, data, director_name
