@@ -1,22 +1,18 @@
 ﻿# ***Director Search Converter Readme***
 # Contents
-[1.0 - Overview:	1](#_Toc111577249)
+[1.0 - Overview](#overview)
 
-[1.1 - Interpreter Settings	1](#_Toc111577250)
+[2.0 - File Selection](#file-selection)
 
-[2.0 - File Selection:	2](#_Toc111577251)
+[3.0 - Options](#options)
 
-[3.0 - Options:	3](#_Toc111577252)
+[4.0 - Export](#export)
 
-[4.0 - Export:	4](#_Toc111577253)
-
-[4.1 - .pdf Renaming Note:	5](#_Toc111577254)
-
-[5.0 - .xlsx File	6](#_Toc111577255)
+[5.0 - .xlsx File](#file)
 
 
 
-# 1.0 - Overview:
+# <a name="overview"></a>1.0 - Overview:
 This program is designed as a tool for the automatic conversion of multiple .pdf Dun & Bradstreet director reports into a consolidated list of .xlsx data using pdfminer3 as the primary conversion tool. 
 
 It also allows for several filtering options to cater to the auditing work being performed and was trialled by BDO LLP for company use circa. January 2020, where this process was originally performed manually.
@@ -42,11 +38,11 @@ This program was generated in Python 3.8.0 using the Pycharm IDE with the follow
 |Wheel|0.36.2|
 
 
-# 2.0 - File Selection:
+# <a name="file-selection"></a>2.0 - File Selection:
 Save all director reports into a folder and select its file path in the top left of the user interface. Once the file path has been selected it will automatically list the contents of the folder, flagging up any files without a .pdf extension.
 
 
-# 3.0 - Options:
+# <a name="options"></a>3.0 - Options:
 There are several options available to filter out any unnecessary data from the extracts, including:
 
 - Financial Year End filtering – Selecting a date range to filter by will remove any lines of data with appointment dates after the last day of the year end period, as well as resignation dates occurring before the first day of the year end period
@@ -55,7 +51,7 @@ There are several options available to filter out any unnecessary data from the 
 - Rename PDF – When .pdf files are initially exported from D & B, they will normally contain a random number string as its name. All files must be renamed to that of the relevant director for audit archiving purposes. Selecting this option automatically renames the file to the name of the director after data has been imported.
 
 
-# 4.0 - Export:
+# <a name="export"></a>4.0 - Export:
 When the conversion button is pressed, outputs will be printed to the list box as files are converted individually, displaying the total number of companies present in the file, as well as the number that remain after filtering has been applied. The total number of companies converted, as well as those remaining after filtering, is also displayed once all files are imported.
 
 Any .pdf files with non-standard formatting will be marked up in red, but this should only occur due to a non-director report .pdf file being present in the directory, as the .pdf formatting of the export reports is highly consistent when transforming in pdfminer3.
@@ -66,6 +62,6 @@ Note that if .pdf renaming has been selected as an option, it will disable the p
 
 
 
-# 5.0 - .xlsx File
+# <a name="file"></a>5.0 - .xlsx File
 Once the conversion has completed, the file will be saved to the same folder as the imports, named as ‘Consolidated Director Report.xlsx’. If there is a file present in this folder already it will have its contents overwritten.
 
