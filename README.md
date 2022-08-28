@@ -1,14 +1,14 @@
 ﻿# ***Director Search Converter Readme***
 # Contents
-## [1.0 - Overview](#overview)
+### [1.0 - Overview](#overview)
 
-## [2.0 - File Selection](#file-selection)
+### [2.0 - File Selection](#file-selection)
 
-## [3.0 - Options](#options)
+### [3.0 - Options](#options)
 
-## [4.0 - Export](#export)
+### [4.0 - Export](#export)
 
-## [5.0 - .xlsx File](#file)
+### [5.0 - .xlsx File](#file)
 
 
 
@@ -61,7 +61,7 @@ Any .pdf files with non-standard formatting will be marked up in red, but this s
 ![alt text](https://github.com/dwrlewis/Director-Search-Converter/blob/ccb4a3d79f2bbe8a0f457cbbd1e386f6f6513f49/README%20Images/Screen%203.png)
 
 
-## 4.1 - .pdf Renaming Note:
+### 4.1 - .pdf Renaming Note:
 Note that if .pdf renaming has been selected as an option, it will disable the pdf conversion button until the import file path is reselected. This is because the import is dependent on the original filenames which will no longer be present, so the import path will need to be reselected if different filters are to be applied to the data.
 
 ![alt text](https://github.com/dwrlewis/Director-Search-Converter/blob/ccb4a3d79f2bbe8a0f457cbbd1e386f6f6513f49/README%20Images/Screen%204.png)
