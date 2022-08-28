@@ -13,9 +13,9 @@
 
 
 # <a name="overview"></a>1.0 - Overview:
-This program is designed as a tool for the automatic conversion of multiple .pdf Dun & Bradstreet director reports into a consolidated list of .xlsx data using pdfminer3 as the primary conversion tool. 
+This program is designed as a tool for the automatic conversion of multiple .pdf Dun & Bradstreet director reports into a consolidated list of .xlsx data using pdfminer3 as the primary conversion tool. It also allows for several filtering options to cater to the auditing work being performed such as filtering by year end and company role.
 
-It also allows for several filtering options to cater to the auditing work being performed and was trialled by BDO LLP for company use circa. January 2020, where this process was originally performed manually.
+This program was trialled by BDO LLP for company use circa. January 2020, where this process was originally performed manually. This resulted in this program being used as a basis for full end to end automation of downloading director reports > Converting format > Uploading to ATP.
 
 The files [found here](https://github.com/dwrlewis/Director-Search-Converter/tree/master/Test%20Files) match the template of the original .pdf extracts, but have had all references to director name, dates, companies, and reference numbers randomised.
 ## 1.1 - Interpreter Settings
